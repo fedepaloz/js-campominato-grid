@@ -29,13 +29,14 @@ h1 {
     line-height: 100px;
 }
 
-.container {
+#cell-container {
     margin: 50px auto;
     width: 500px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
     background-color: darkgray;
+    display: none;
 }
 
 
