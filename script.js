@@ -10,9 +10,9 @@ const cellContainer = document.getElementById("cell-container")
 
 //faccio 100 celle con un ciclo for
 
-for (let i=0 ; i <= 100; i++) {
+for (let i = 0; i <= 100; i++) {
     const cell = document.createElement('div')
-    cell.className ="cell"
+    cell.className = "cell"
     cellContainer.appendChild(cell)
 }
 
