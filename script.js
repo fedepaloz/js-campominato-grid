@@ -7,13 +7,17 @@
 //recupero elementi dal dom
 const button = document.getElementById("play")
 const cellContainer = document.getElementById("cell-container")
+const container = document.getElementById("container")
 
 //faccio 100 celle con un ciclo for
 
-for (let i = 0; i <= 100; i++) {
-    const cell = document.createElement('div')
-    cell.className = "cell"
-    cellContainer.appendChild(cell)
-}
-
+button.addEventListener ('click' , function() {
+    for (let i = 1; i <= 100; i++) {
+        const cell = document.createElement('div')
+        cell.className = "cell"
+        cellContainer.appendChild(cell)
+        cell.innerText=i
+    }
+    
+})
 
