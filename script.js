@@ -11,13 +11,17 @@ const container = document.getElementById("container")
 
 //faccio 100 celle con un ciclo for
 
-button.addEventListener ('click' , function() {
+button.addEventListener('click', function () {
     for (let i = 1; i <= 100; i++) {
         const cell = document.createElement('div')
         cell.className = "cell"
         cellContainer.appendChild(cell)
-        cell.innerText=i
+        cell.innerText = i
+        cell.addEventListener('click' , function ()
+        {cell.classList.add("clicked")})
+        
     }
-    
+
 })
+
 
